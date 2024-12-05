@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+/* custom properties */
+
+:root
+{
+    --font: system-ui, sans-serif;
+    --black: #000000;
+    --white: #ffffff;
+    --grey: #7f7f7f;
+    --grey-light: #e8e5e480;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    vertical-align: baseline;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    font-size: 100%;
+    font-family: var(--font);
+    color: var(--black);
+    background-color: var(--white);
+}
+
+img, video
+{
+    max-width: 100%;
+    width: 100%;
+    display: block;
+}
+
+svg
+{
+    width: 100%;
+    display: block;
+    fill: currentColor;
+}
+
+a
+{
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+}
+
+p a
+{
+    display: inline;
+}
+
+li
+{
+    list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6, p
+{
+    font-size: 1em;
+    font-weight: inherit;
+    font-style: inherit;
+    text-decoration: none;
+    color: inherit;
+}
